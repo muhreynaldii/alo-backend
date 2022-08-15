@@ -1,0 +1,30 @@
+GET http://localhost:5000/admin
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWEiOiJSZXkiLCJlbWFpbCI6InJleW5hbGRpMTgwMTAxQGdtYWlsLmNvbSIsImlhdCI6MTY2MDU3NDc3OCwiZXhwIjoxNjYwNTc0Nzk4fQ.71u_KTFGy_NAfSD71Cr7klAk4ymG_zd76a6QxcfiEn0
+
+
+###
+POST http://localhost:5000/admin
+Content-Type: application/json
+
+{
+    "nama":"Rey",
+    "email":"reynaldi180101@gmail.com",
+    "password" :"12345",
+    "confPassword" :"12345"
+
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email":"reynaldi180101@gmail.com",
+    "password" :"12345"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
